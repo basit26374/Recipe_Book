@@ -13,6 +13,7 @@ export class RecipeService {
       ];
 
     getRecipe() {
-        return this.recipes;
+        // due to 'slice()', return copy of recipes
+        return this.recipes.slice();
     }
 }
